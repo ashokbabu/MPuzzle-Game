@@ -1,0 +1,54 @@
+#define IMAGES_DIR "/usr/share/pixmaps/"
+
+#define NO_OF_UNDOS_SUPPORTED 500
+#define MAXSIZE 256
+
+#define UP 0
+#define DOWN 1
+#define LEFT 2
+#define RIGHT 3
+
+
+GtkWidget *main_window, *vbox1;
+GtkWidget *table1;
+GtkWidget *buttons[15];
+GtkWidget *statusbar1;
+GtkWidget *alignment1;
+GtkWidget *image;
+
+
+gint move_no;
+gint vacant_pos;
+gint vacant_prev_pos;
+
+struct pos {
+        gint attach_in_vac_pos;	
+        struct pos *link;
+} *undo_store_positions=NULL;
+
+
+gboolean store_sequence_check_is_puzzle_solvable (void);
+
+void generate_puzzle (void);	
+
+GtkWidget* create_main_window (void);
+
+void swap_buttons (int p, int q);
+
+void on_new_activate (GtkWidget *button,GtkMenuItem *menuitem, gpointer user_data);
+
+void on_quit1_activate (GtkMenuItem *menuitem, gpointer user_data);
+
+void on_about1_activate (GtkMenuItem *menuitem, gpointer user_data);
+
+void on_undo_activate (GtkWidget *button,gpointer user_data);
+
+void on_quit_confirm(GtkMenuItem *menuitem, gpointer user_data);
+
+void up();
+void down();
+void left();
+void right();
+gboolean is_move_correct(int x);
+
+		

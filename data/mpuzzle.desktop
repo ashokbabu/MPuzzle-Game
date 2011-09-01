@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.1
+Type=Application
+Name=Mpuzzle
+Exec=/usr/bin/mpuzzle
+Icon=mpuzzle
+X-Window-Icon=mpuzzle
+X-Window-Icon-Dimmed=mpuzzle
+X-Osso-Service=org.maemo.mpuzzle
+X-Osso-Type=application/x-executable

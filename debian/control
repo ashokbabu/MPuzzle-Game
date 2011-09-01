@@ -1,0 +1,13 @@
+Source: mpuzzle
+Section: user/games
+Priority: optional
+Maintainer: MARS Telecom <ramulu.kambalapuram@mars-india.com>
+Build-Depends: debhelper (>= 4.0.0), intltool,
+ libhildon1-dev, libgtk2.0-dev, libosso-gnomevfs2-dev,
+ libglib2.0-dev, libdbus-glib-1-dev, libosso-dev, libosso-email-interface-dev, conbtdialogs-dev, libhildonhelp-dev, libhildonfm2-dev, osso-af-settings
+Standards-Version: 3.6.0
+
+Package: mpuzzle
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Simple puzzle game.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hildonhelpsource>
+  <folder>
+    <title>Mpuzzle</title>
+    <topic>
+      <topictitle>Main Topic</topictitle>
+      <context contextUID="Example_Mpuzzle_Content" />
+      <para>This is a help file with example content.</para>
+    </topic>
+  </folder>
+</hildonhelpsource>
